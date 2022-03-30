@@ -1,0 +1,17 @@
+* {
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+html body {
+  min-height: -webkit-fill-available;
+}
+@media (max-width: 991.98px) {
+  html body > #section__page {
+    min-height: 100vh;
+  }
+}
