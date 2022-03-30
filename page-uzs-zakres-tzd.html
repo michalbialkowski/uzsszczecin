@@ -7,16 +7,16 @@
     <title>UZS Szczecin</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=d41d8cd98f00b204e9800998ecf8427e">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css?h=220695d33937f0c1d9977599320bf21d">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.compiled.css?h=2bd8ae51048e6ce9a4b2d4a7985a3d6a">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-grid.compiled.contrast.css?h=cda94c6609ea22ac0d4d2e1924551f9c">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-reboot.compiled.css?h=4959e1b9694579d30b2567d558b9b101">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-utilities.compiled.css?h=68fca5ac54c321cb21d728bd3d1f5f10">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css?h=37efe7e508357f382d0a5b2b73cd47ee">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.compiled.css?h=75a48122026a503cc002078e1b6ae047">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-grid.compiled.css?h=cda94c6609ea22ac0d4d2e1924551f9c">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-reboot.compiled.css?h=cf8ec62a918b35bc569c148dfbeb336d">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-utilities.compiled.css?h=47aa9311ce1d53d64c16add73774bc97">
     <link rel="stylesheet" href="assets/css/page.compiled.css?h=08a84c445d106f44583defad25fe8a24">
     <link rel="stylesheet" href="assets/css/utilities/utilities.compiled.css?h=17a0ad803b7638f8d25b79cdd44b1983">
     <link rel="stylesheet" href="assets/css/libs/libs.compiled.css?h=3e40de51282d78e908e9012d79fe70db">
     <link rel="stylesheet" href="assets/css/overrides/overrides.compiled.css?h=b1677440d873f02e4fe9a4bdb2973ace">
-    <link rel="stylesheet" href="assets/css/sections/sections.compiled.css?h=c6076b9ba97caa0a3f07bd39fd461f2c">
+    <link rel="stylesheet" href="assets/css/sections/sections.compiled.css?h=1b223190febf1431c1e12dafadf47a38">
 </head>
 
 <body class="bg-secondary">
@@ -49,7 +49,7 @@
                                     <div class="col-auto d-none d-lg-block px-2">
                                         <div class="btn-toolbar">
                                             <div class="btn-group px-xl-2" role="group"><a class="btn" role="button" href="bip.html"><img class="w--40" src="assets/img/logos/logo-bip.svg?h=ac3a697e6d941a18c2c2bc3b6c49aa3f"></a></div>
-                                            <div class="btn-group border-start px-xl-2" role="group"><button class="btn" type="button"><img src="assets/img/icons/icon-text.svg?h=cc1918792aa56da63f60ea790d7514d3"></button><button class="btn" type="button"><img src="assets/img/icons/icon-contrast.svg?h=a5dac0795f392bdd40d7f9cefdb57e8b"></button></div>
+                                            <div class="btn-group border-start px-xl-2" role="group"><button class="btn" type="button" data-bs-target="#modal__settings" data-bs-toggle="modal"><img src="assets/img/icons/icon-settings.svg?h=e5aa24ad807ca9ee5180c7af29d26dde" style="width: 30px;height: 30px;"></button></div>
                                             <div class="btn-group border-start px-xl-2" role="group"><button class="btn" type="button"><img src="assets/img/icons/icon-facebook.svg?h=f75d3ded5b7cfc29909bbc3e69930560"></button></div>
                                             <div class="btn-group border-start px-xl-2" role="group">
                                                 <div class="dropdown btn-group" role="group"><button class="btn dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">PL</button>
@@ -158,7 +158,19 @@
             <div id="section__footer" class="pt--90">
                 <div class="text-white bg-secondary">
                     <div class="container">
-                        <div class="position-relative py--85 footer--topline">
+                        <div class="position-relative">
+                            <div class="position-absolute bottom-0 w-100">
+                                <div class="line-height-none" style="padding-left: 119px; font-size: 0;">
+                                    <div class="row g-0">
+                                        <div class="col"><a class="btn btn-danger w-100 p-1" role="button" href="#"></a></div>
+                                        <div class="col"><a class="btn btn-success w-100 p-1" role="button" href="#"></a></div>
+                                        <div class="col"><a class="btn btn-warning w-100 p-1" role="button" href="#"></a></div>
+                                        <div class="col"><a class="btn btn-primary w-100 p-1" role="button" href="#"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative py--85">
                             <div class="row my-n3">
                                 <div class="col-12 col-md-6 col-xl-3 py-3">
                                     <div class="position-absolute top-0 start-0 translate-middle-y zx--25"><img class="w--120 h--120" src="assets/img/logos/logo-uzs-sygnet.png?h=6a78092d5be9d083a10e9165a0eed406"></div>
@@ -244,6 +256,33 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal__settings">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content rounded shadow">
+                    <div class="modal-header bg-light py-2">
+                        <h4 class="modal-title h5">Ustawienia</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <div class="my-n2">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-sm-5 py-2"><span class="fw-bold">Wielkość czcionki</span></div>
+                                <div class="col py-2">
+                                    <div><input class="form-range" type="range" min="1" max="3" step="1" value="2"></div>
+                                    <div class="d-flex justify-content-between mx-n1 small mt-n1"><small class="px-1">Mała</small><small class="px-1">Średnia</small><small class="px-1">Duża</small></div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-sm-5 py-2"><span class="fw-bold">Wysoki kontrast</span></div>
+                                <div class="col py-2">
+                                    <div class="form-check form-switch"><input class="form-check-input rounded-pill" type="checkbox" id="formCheck-1"><label class="form-check-label small" for="formCheck-1">Włączony</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary text-white px-3" type="button">Zastosuj</button></div>
                 </div>
             </div>
         </div>
